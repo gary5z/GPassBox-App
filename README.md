@@ -10,3 +10,4 @@
 
 使用至今，不觉间也记录上百条信息啦！
  
+[APK下载](https://pan.baidu.com/s/1mh8775Y)
