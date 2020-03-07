@@ -11,3 +11,5 @@
 使用至今，不觉间也记录上百条信息啦！
  
 [APK下载](https://pan.baidu.com/s/1mh8775Y)
+
+![二维码](https://pan.baidu.com/share/qrcode?w=148&h=148&url=https%3A%2F%2Fpan.baidu.com%2Fs%2F1mh8775Y%3Fqrfrom%3D1%26qrtype%3Dapk)
