@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".CategoryEditActivity" >
+
+    <include android:id="@+id/headerLayout" layout="@layout/activity_header" />
+    
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/reg_bg" >
+    <TableLayout
+        android:id="@+id/layoutContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1" >
+        <TableRow>
+	        <TextView
+	            android:id="@+id/lblPwd"
+	            android:layout_width="110dp"
+	            android:layout_height="match_parent"
+	            android:background="#0000"
+	            android:text="原始密码*"
+	            android:gravity="center_vertical"
+	            android:padding="14dp" >
+	            <requestFocus />
+	        </TextView>
+	        <EditText
+	            android:id="@+id/txtPwd"
+	            android:inputType="textPassword"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:background="#0000"
+	            android:hint="原始密码"
+	            android:gravity="center_vertical"
+	            android:padding="14dp" />
+        </TableRow>
+
+        <ImageView
+            android:id="@+id/ImageView01"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/reg_list_line" />
+
+        <TableRow>
+	        <TextView
+	            android:id="@+id/lblNewPwd"
+	            android:layout_width="110dp"
+	            android:layout_height="match_parent"
+	            android:background="#0000"
+	            android:text="新密码*"
+	            android:gravity="center_vertical"
+	            android:padding="14dp" />
+
+	        <EditText
+	            android:id="@+id/txtNewPwd"
+	            android:inputType="textPassword"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#0000"
+	            android:ems="10"
+	            android:hint="新密码"
+	            android:gravity="center_vertical"
+	            android:padding="14dp" />
+        </TableRow>
+        
+        <ImageView
+            android:id="@+id/ImageView02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/reg_list_line" />
+        
+        <TableRow>
+	        <TextView
+	            android:id="@+id/lblConfirmPwd"
+	            android:layout_width="110dp"
+	            android:layout_height="match_parent"
+	            android:background="#0000"
+	            android:text="确认新密码*"
+	            android:gravity="center_vertical"
+	            android:padding="14dp" />
+
+	        <EditText
+	            android:id="@+id/txtConfirmPwd"
+	            android:inputType="textPassword"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:background="#0000"
+	            android:ems="10"
+	            android:hint="确认新密码"
+	            android:gravity="center_vertical"
+	            android:padding="14dp" />
+        </TableRow>
+        
+        <ImageView
+            android:id="@+id/ImageView06"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:scaleType="centerCrop"
+            android:src="@drawable/reg_list_line" />
+        
+   	</TableLayout>
+    </ScrollView>
+        
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/reg_bt"
+        android:text="保存"
+        android:textColor="#fff"
+        android:textSize="22sp" />
+
+</RelativeLayout>

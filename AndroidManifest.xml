@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ghut.passbox"
+    android:versionCode="2"
+    android:versionName="2.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <!-- 配置切换权限（多语言）， 4.1以上需要声明 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 主页圆形菜单 -->
+    <!-- <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" /> -->
+    <!-- 读取MIEI -->
+    <!-- <uses-permission android:name="android.permission.READ_PHONE_STATE" />  -->
+    <!-- 往SDCARD中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 在SDCARD中创建删除文件的权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <application
+        android:name="com.ghut.passbox.PassBoxApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.ghut.passbox.activity.impl.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ghut.passbox.activity.impl.MainActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.CategoryListActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.CategoryEditActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.CategorySelectActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.RecordListActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.RecordEditActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.SettingActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.AboutActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.ghut.passbox.activity.impl.RepwdActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+		<activity
+            android:name="com.ghut.passbox.activity.impl.BackupRestoreActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+		
+		<activity
+            android:name="com.ghut.passbox.activity.FileChooserActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+		
+		<activity
+            android:name="com.ghut.passbox.activity.SpinerWindowDemoActivity"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+		
+		<activity
+            android:name="jp.wasabeef.sample.RichEditorActivityDemo"
+            android:configChanges="locale"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            android:windowSoftInputMode="stateHidden" />
+		
+		<!-- 
+        <activity 
+            android:name="com.example.testsdcardfile.MyFileManager"
+            android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen"
+            ></activity>
+        -->
+    </application>
+
+</manifest>

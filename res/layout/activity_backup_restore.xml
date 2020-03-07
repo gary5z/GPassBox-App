@@ -1,0 +1,154 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".BackupRestoreActivity" >
+
+    <include android:id="@+id/headerLayout" layout="@layout/activity_header" />
+    
+
+    <TextView
+        android:id="@+id/lblBackup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/headerLayout"
+        android:layout_marginTop="10dp"
+        android:background="#0000"
+        android:text="请选择备份目录"
+        android:gravity="center_vertical"
+        android:padding="14dp" >
+        <requestFocus />
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/btnSelectBackup"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/lblBackup"
+        android:layout_alignRight="@id/lblBackup"
+        android:layout_alignBottom="@id/lblBackup"
+        android:padding="0dp"
+        android:src="@drawable/open"
+        android:scaleType="fitCenter" />
+    
+   <ImageView
+       android:id="@+id/imgLine1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/lblBackup"
+       android:layout_marginTop="5dp"
+       android:layout_weight="3"
+       android:scaleType="centerCrop"
+       android:src="@drawable/reg_list_line" />
+    
+    <Button
+        android:id="@+id/btnBackup"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/imgLine1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/reg_bt"
+        android:text="备份到SD卡"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+   
+    <TextView
+        android:id="@+id/lblRestore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBackup"
+        android:layout_marginTop="20dp"
+        android:background="#0000"
+        android:text="当前账号将被还原覆盖，请谨慎！"
+        android:gravity="center_vertical"
+        android:padding="14dp" >
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/btnSelectRestore"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/lblRestore"
+        android:layout_alignRight="@id/lblRestore"
+        android:layout_alignBottom="@id/lblRestore"
+        android:padding="0dp"
+        android:src="@drawable/open"
+        android:scaleType="fitCenter" />
+    
+   <ImageView
+       android:id="@+id/imgLine2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/lblRestore"
+       android:layout_marginTop="5dp"
+       android:layout_weight="3"
+       android:scaleType="centerCrop"
+       android:src="@drawable/reg_list_line" />
+    
+    <Button
+        android:id="@+id/btnRestore"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/imgLine2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/reg_bt"
+        android:text="从SD卡还原"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+   
+    <TextView
+        android:id="@+id/lblEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnRestore"
+        android:layout_marginTop="20dp"
+        android:background="#0000"
+        android:text="请绑定邮箱"
+        android:gravity="center_vertical"
+        android:padding="14dp" >
+    </TextView>
+    
+    <ImageView
+        android:id="@+id/btnBindEmail"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@id/lblEmail"
+        android:layout_alignRight="@id/lblEmail"
+        android:layout_alignBottom="@id/lblEmail"
+        android:padding="0dp"
+        android:src="@drawable/email"
+        android:scaleType="fitCenter" />
+    
+   <ImageView
+       android:id="@+id/imgLine3"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_below="@id/lblEmail"
+       android:layout_marginTop="5dp"
+       android:layout_weight="3"
+       android:scaleType="centerCrop"
+       android:src="@drawable/reg_list_line" />
+    
+    <Button
+        android:id="@+id/btnSendToEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/imgLine3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/reg_bt"
+        android:text="备份到邮箱"
+        android:textColor="#fff"
+        android:textSize="16sp" />
+
+</RelativeLayout>

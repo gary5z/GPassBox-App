@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--  android:descendantFocusability="blocksDescendants"表示覆盖子空间获取焦点，解决itemclick无效的问题-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp" >
+
+        <ImageView
+            android:id="@+id/icon"
+            android:contentDescription="icon"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentLeft="true" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/text"
+            android:text="file"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/icon">
+        </TextView>
+        
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+             >
+        </CheckBox>
+        
+    </RelativeLayout>
+
+</LinearLayout>

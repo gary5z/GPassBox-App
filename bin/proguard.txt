@@ -1,0 +1,48 @@
+# view AndroidManifest.xml #generated:22
+-keep class com.ghut.passbox.PassBoxApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.ghut.passbox.activity.FileChooserActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:112
+-keep class com.ghut.passbox.activity.SpinerWindowDemoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.ghut.passbox.activity.impl.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.ghut.passbox.activity.impl.BackupRestoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:51
+-keep class com.ghut.passbox.activity.impl.CategoryEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:45
+-keep class com.ghut.passbox.activity.impl.CategoryListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:58
+-keep class com.ghut.passbox.activity.impl.CategorySelectActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:28
+-keep class com.ghut.passbox.activity.impl.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:39
+-keep class com.ghut.passbox.activity.impl.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:70
+-keep class com.ghut.passbox.activity.impl.RecordEditActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.ghut.passbox.activity.impl.RecordListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.ghut.passbox.activity.impl.RepwdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:77
+-keep class com.ghut.passbox.activity.impl.SettingActivity { <init>(...); }
+
+# view res/layout/activity_richeditor.xml #generated:266
+-keep class jp.wasabeef.richeditor.RichEditor { <init>(...); }
+
+# view AndroidManifest.xml #generated:120
+-keep class jp.wasabeef.sample.RichEditorActivityDemo { <init>(...); }
+
